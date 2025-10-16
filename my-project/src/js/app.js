@@ -1,0 +1,1 @@
+// This file contains the JavaScript code for the application, implementing its core functionality.

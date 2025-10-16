@@ -1,0 +1,31 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "A project that includes a GitHub Pages site and a web application.",
+  "main": "src/index.html",
+  "scripts": {
+    "deploy": "gh-pages -d docs",
+    "start": "live-server src",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "node-sass src/css/app.css docs/css/styles.css",
+    "build:js": "babel src/js/app.js -o docs/js/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-49/med-terms.git"
+  },
+  "keywords": [
+    "github-pages",
+    "web",
+    "application"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1",
+    "babel-cli": "^6.26.0"
+  },
+  "dependencies": {}
+}
